@@ -22,5 +22,56 @@
 
 body {
   font-family: var(--ff-primary), sans-serif;
+  background-color: var(--white);
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  text-decoration: none;
+  color: var(--drk-grayish-blue);
+  font-weight: var(--fw-sm);
+  font-size: 1rem;
+}
+ul {
+  list-style: none;
 }
 /* #endregion common rules */
+/* #region header */
+.nav__menu--collapsed {
+  display: none;
+}
+.nav__container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__start,
+.nav__end {
+  display: flex;
+  gap: 1rem;
+}
+.nav__toggler {
+  border: none;
+}
+.nav__profile img {
+  max-width: 25px;
+}
+/* #endregion header */
+
+/* #region mediaqueries */
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+  .nav__menu--collapsed {
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    flex-grow: 2;
+    padding-left: 2rem;
+  }
+}
+/* #endregion mediaqueries */

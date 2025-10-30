@@ -15,6 +15,51 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__container">
+          <!-- left: menu toggler + logo -->
+          <div class="nav__start">
+            <button type="button" class="nav__toggler">
+              <img src="./assets/images/icon-menu.svg" alt="Open menu" />
+            </button>
+            <a href="#" class="nav__logo">
+              <img src="./assets/images/logo.svg" alt="brand logo" />
+            </a>
+          </div>
+
+          <!-- center: main navigation links -->
+          <ul class="nav__menu nav__menu--collapsed">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Collections</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Men</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Women</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <!-- right: cart + profile -->
+          <div class="nav__end">
+            <a href="#" class="nav__cart">
+              <img src="./assets/images/icon-cart.svg" alt="Cart" />
+            </a>
+            <a href="#" class="nav__profile">
+              <img src="./assets/images/image-avatar.png" alt="Profile" />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
