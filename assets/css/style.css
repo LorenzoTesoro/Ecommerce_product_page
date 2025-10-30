@@ -1,0 +1,26 @@
+/* #region common rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --primary: hsl(26, 100%, 55%);
+  --pale-primary: hsl(25, 100%, 94%);
+
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --darker-blue: hsl(220, 13%, 13%);
+  --drk-grayish-blue: hsl(219, 9%, 45%);
+  --grayish-blue: hsl(220, 14%, 75%);
+  --lighter-blue: hsl(223, 64%, 98%);
+
+  --fw-sm: 400;
+  --fw-md: 700;
+  --ff-primary: "Kumbh Sans";
+}
+
+body {
+  font-family: var(--ff-primary), sans-serif;
+}
+/* #endregion common rules */
