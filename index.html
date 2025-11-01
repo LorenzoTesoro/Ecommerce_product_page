@@ -29,7 +29,12 @@
           </div>
 
           <!-- center: main navigation links -->
-          <ul class="nav__menu nav__menu--collapsed">
+          <ul class="nav__menu">
+            <li class="nav__item">
+              <button type="button" class="nav__close">
+                <img src="./assets/images/icon-close.svg" alt="Close menu" />
+              </button>
+            </li>
             <li class="nav__item">
               <a href="#" class="nav__link">Collections</a>
             </li>
@@ -59,6 +64,9 @@
         </div>
       </nav>
     </header>
+
+    <!-- overlay when menu mobile is open -->
+    <div class="nav__overlay"></div>
 
     <main class="main">
       <div class="main__container">

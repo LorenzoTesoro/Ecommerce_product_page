@@ -41,9 +41,56 @@ ul {
 }
 /* #endregion common rules */
 /* #region header */
-.nav__menu--collapsed {
-  display: none;
+/* Base menu style (mobile) */
+.nav__menu {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Start hidden offscreen */
+  width: 70vw;
+  height: 100vh;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+  z-index: 100;
+  transition: left 0.3s ease-in-out; /* Smooth slide */
 }
+/* Open state */
+.nav__menu--open {
+  left: 0; /* Slide into view */
+}
+
+/* Hide collapsed (desktop fallback) */
+.nav__menu--collapsed {
+  left: -100%;
+}
+
+.nav__close {
+  border: none;
+  padding: 0 0 2rem 0;
+  background-color: white;
+}
+.nav__menu--open .nav__link {
+  color: var(--black);
+  font-weight: var(--fw-md);
+  font-size: 1.225rem;
+}
+.nav__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 90;
+}
+
+.nav__overlay--active {
+  opacity: 1;
+  visibility: visible;
+}
+
 .nav__container {
   padding: 1.5rem;
   display: flex;
