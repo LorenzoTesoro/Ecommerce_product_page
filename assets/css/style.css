@@ -103,15 +103,21 @@ ul {
 }
 .nav__toggler {
   border: none;
-}
-.nav__profile img {
-  max-width: 25px;
+  background-color: var(--white);
 }
 .nav__cart {
   flex: 1;
+  align-self: center;
 }
 .nav__profile {
   flex: 2;
+  width: 20px;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+.nav__profile:hover {
+  outline: 2px solid var(--primary);
 }
 .nav__item,
 .nav__cart,
@@ -140,6 +146,9 @@ ul {
 .thumbnail__active {
   opacity: 0.5;
   outline: 2px solid var(--primary);
+}
+.thumbnail__container:hover {
+  opacity: 0.5;
 }
 .gallery__controls {
   position: absolute;
